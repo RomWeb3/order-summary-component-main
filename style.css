@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 1440px;
+    height: 900px;
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+}
+
+.contain {
+    width: 450px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+}
+
+.img {
+    background: url(./images/illustration-hero.svg) center/cover;
+    height: 220px;
+    width: 450px;
+    border-radius: 20px 20px 00px 0px;
+}
+
+h1 {
+    margin-top: 50px;
+font-size: 1.8em;
+}
+
+p {
+    text-align: center;
+    margin: 15px 35px;
+    font-size: 1.05em;
+    line-height: 1.45em;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+}
+
+.box {
+    background: hsl(225, 100%, 98%);
+    width: 80%;
+    height: 14%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.iconMusic {
+    background: url(./images/icon-music.svg)center/cover;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.wrap {
+    background: hsl(225, 100%, 98%);
+}
+
+.plan {
+    background: hsl(225, 100%, 98%);
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.price {
+    background: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    font-size: 1em;
+}
+
+.change {
+    background: hsl(225, 100%, 98%);
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 0.9em;
+    position: absolute;
+    right: 8%;
+}
+
+.change:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #766cf1;
+}
+
+button {
+    margin: 32px;
+    width: 80%;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 3.1em;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 5px 18px 30px -5px rgba(118,108,241,0.37);
+}
+
+button:hover {
+    background-color: #766cf1;
+    cursor: pointer;
+}
+
+span {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 0.95em;
+}
+
+span:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 500px) {
+/* *{border: 1px solid black;} */
+    .container {
+        background: url(./images/pattern-background-mobile.svg)center/cover;
+        background-repeat: no-repeat;
+        height: 1400px;
+        width: 600px;
+    }
+    .contain {
+        width: 330px;
+        height: 565px;
+        box-shadow: none;
+    }
+
+    .img {
+        width: 330px;
+        height: 160px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      margin-top: 30px;
+    }
+
+    p {
+        font-size: 0.95em;
+        line-height: 25px;
+
+    }
+
+    .box {
+        width: 85%;
+    }
+
+    .iconMusic {
+        margin: 15px;
+    }
+
+    .plan {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 0.9em;
+    }
+
+    .change {
+        font-size: 0.8em;
+        right: 6%;
+    }
+
+    button {
+        width: 85%;
+        margin: 30px;
+        box-shadow: none;
+    }
+
+    span {
+        margin-top: -5px;
+    }
+}
