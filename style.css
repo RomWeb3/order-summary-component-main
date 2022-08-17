@@ -5,15 +5,13 @@
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
     background-color: white;
-    /* border: 1px solid black; */
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
@@ -146,7 +144,7 @@ span:hover {
         background: url(./images/pattern-background-mobile.svg)center/cover;
         background-repeat: no-repeat;       
         width: 600px;
-        overflow: scroll;
+        overflow: auto;
     }
     .contain {
         width: 330px;
